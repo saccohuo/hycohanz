@@ -61,10 +61,10 @@ def set_variable(oProject, name, value):
     
     """
     if '$' in name: 
-		oProject.SetVariableValue(name,Expression(value).expr)
+        oProject.SetVariableValue(name,Expression(value).expr)
     else:
-		oDesign = oProject.GetActiveDesign()
-		oDesign.SetVariableValue(name,Expression(value).expr)
+        oDesign = oProject.GetActiveDesign()
+        oDesign.SetVariableValue(name,Expression(value).expr)
 
 def get_variables(oProject,oDesign=''):
     """
