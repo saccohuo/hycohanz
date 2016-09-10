@@ -31,7 +31,8 @@ def setup_interface():
     # existing HFSS process instead of creating a new one.  I would highly 
     # prefer that a new process is created.  Apparently 
     # win32com.client.DispatchEx() doesn't work here either.
-    oAnsoftApp = win32com.client.Dispatch('AnsoftHfss.HfssScriptInterface')
+    # oAnsoftApp = win32com.client.Dispatch('AnsoftHfss.HfssScriptInterface')
+    oAnsoftApp = win32com.client.Dispatch('AnsoftHfss.HfssScriptInterface.15.0')
 
     oDesktop = oAnsoftApp.GetAppDesktop()
 
