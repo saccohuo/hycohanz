@@ -49,7 +49,12 @@ Dozens more [[https://github.com/saccohuo/hycohanz/tree/devel/examples][examples
 - Function: =get_variables= in =property.py=
 ** TODO update links in this README
 ** TODO add function to duplicate along line for the model
-idea: use =copy= , =paste= and =move= to complete the required function.
+wrong idea: use =copy= , =paste= and =move= to complete the required function.
+right idea: use inner function in HFSS to complete it.
 ** TODO add function to duplicate around axis for the model
 ** TODO add function to assign lumped port
 The key point is how to solve the integration line for the lumped port.
+** CANCELLED estimate relative coordinate of absolute coordinate in every operation(especially for paste)
+Should modify =paste.py= to support relative coordinate.
+However, I find the inner function =paste= in HFSS also support paste in current coordinate.
+So I will cancel the plan to support this feature at present.
