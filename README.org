@@ -32,3 +32,5 @@ Dozens more [[https://github.com/saccohuo/hycohanz/tree/devel/examples][examples
 - Function: =set_variable= in =property.py=
 - Function: =get_variables= in =property.py=
 ** TODO update links in this README
+** TODO add function to duplicate along line for the model
+idea: use =copy= , =paste= and =move= to complete the required function.
