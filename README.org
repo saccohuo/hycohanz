@@ -42,7 +42,7 @@ del oDesktop
 del oAnsoftApp
 #+END_SRC
 Dozens more [[https://github.com/saccohuo/hycohanz/tree/devel/examples][examples]] are included in the examples directory of the source distribution.
-* Request Features
+* Requested Features
 ** TODO enable to set description of design property
 - Function: =add_property= in =property.py=
 - Function: =set_variable= in =property.py=
