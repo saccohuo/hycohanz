@@ -34,3 +34,4 @@ Dozens more [[https://github.com/saccohuo/hycohanz/tree/devel/examples][examples
 ** TODO update links in this README
 ** TODO add function to duplicate along line for the model
 idea: use =copy= , =paste= and =move= to complete the required function.
+** TODO add function to duplicate around axis for the model
