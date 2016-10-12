@@ -1,0 +1,34 @@
+#+TITLE: hycohanz
+#+DATE: <2016-10-12 Wed 19:42>
+#+TAGS: Original, hycohanz, readme, hfss, script
+#+LAYOUT: post
+#+CATEGORIES: Tech
+
+#+OPTIONS: ^:{}
+#+OPTIONS: html-postamble:nil
+
+#+INFOJS_OPT: view:nil toc:t ltoc:nil mouse:underline buttons:0 path:http://thomasf.github.io/solarized-css/org-info.min.js
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-light.min.css" />
+
+* hycohanz
+[[http://mradway.github.io/hycohanz/][hycohanz]] is an Open Source (BSD license) Python wrapper interface to the ANSYS HFSS Windows COM API, enabling you to control HFSS from Python. hycohanz simplifies control of HFSS from Python for RF, microwave, and antenna engineers.
+* Minimal Example
+#+BEGIN_SRC python
+import hycohanz as hfss
+
+[oAnsoftApp, oDesktop] = hfss.setup_interface()
+
+raw_input('Press "Enter" to quit HFSS.>')
+
+hfss.quit_application(oDesktop)
+
+del oDesktop
+del oAnsoftApp
+#+END_SRC
+Dozens more [[https://github.com/saccohuo/hycohanz/tree/devel/examples][examples]] are included in the examples directory of the source distribution.
+* Request Features
+** TODO enable to set description of design property
+- Function: =add_property= in =property.py=
+- Function: =set_variable= in =property.py=
+- Function: =get_variables= in =property.py=
+** TODO update links in this README
