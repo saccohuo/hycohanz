@@ -12,6 +12,22 @@
 
 * hycohanz
 [[http://mradway.github.io/hycohanz/][hycohanz]] is an Open Source (BSD license) Python wrapper interface to the ANSYS HFSS Windows COM API, enabling you to control HFSS from Python. hycohanz simplifies control of HFSS from Python for RF, microwave, and antenna engineers.
+* Requirements
+- HFSS 15.0. (if you use other version, maybe you should change the =AnsoftHfss.hfssscriptinterface= in =appobject.py= to the specified COM object for your version)
+- Python 3.
+- pywin32 Windows extension for Python.
+* Quick Install
+Installation is easy if you already have [[http://www.ansys.com/Products/Simulation+Technology/Electromagnetics/Signal+Integrity/ANSYS+HFSS][HFSS]], [[http://www.python.org/][Python]], and the [[http://sourceforge.net/projects/pywin32/][pywin32]] Windows extensions for Python:
+
+1. Download the [[https://github.com/saccohuo/hycohanz/archive/master.zip][.zip file]] from Github.
+
+2. Unzip to a convenient location.
+
+3. At the Windows command shell prompt, run:
+#+BEGIN_SRC shell
+> C:\Python27\python setup.py install
+#+END_SRC
+See [[http://mradway.github.io/hycohanz/install.html][Detailed Installation]] if you don't already have Python installed.
 * Minimal Example
 #+BEGIN_SRC python
 import hycohanz as hfss
