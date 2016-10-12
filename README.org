@@ -51,3 +51,5 @@ Dozens more [[https://github.com/saccohuo/hycohanz/tree/devel/examples][examples
 ** TODO add function to duplicate along line for the model
 idea: use =copy= , =paste= and =move= to complete the required function.
 ** TODO add function to duplicate around axis for the model
+** TODO add function to assign lumped port
+The key point is how to solve the integration line for the lumped port.
